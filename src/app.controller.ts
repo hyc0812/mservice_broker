@@ -11,7 +11,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Post()
+  @Post('dt')
   createDt(@Body() createUserRequest: CreateUserRequest) {
     this.appService.createDt(createUserRequest);
   }
